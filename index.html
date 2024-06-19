@@ -75,7 +75,7 @@
             password: formData.get('password')
         };
 
-        axios.post('https://jhunatienza.github.io/LaraProjecet/api/login', data)
+        axios.post('https://jhunatienza.github.io/LaraProjecet/routes/api/login', data)
             .then(function(response) {
                 const token = response.data.access_token;
                 localStorage.setItem('authToken', token);
