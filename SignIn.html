@@ -74,7 +74,7 @@
         <input type="password" id="password_confirmation" name="password_confirmation" required>
         <button type="submit">Register</button>
     </form>
-    <h3>Already have an account? <a href="C:\Users\User\OneDrive\Desktop\Login.html">Login</a></h3>
+    <h3>Already have an account? <a href="https://jhunatienza.github.io/LaraProjecet/Login.html">Login</a></h3>
     <div class="error-message" id="registrationError"></div>
 </div>
     
@@ -94,7 +94,7 @@
             .then(function(response) {
                 const token = response.data.access_token;
                 localStorage.setItem('authToken', token);
-                window.location.href = "file:///C:/Users/User/OneDrive/Desktop/products.html";
+                window.location.href = "https://jhunatienza.github.io/LaraProjecet/products.html";
             })
             .catch(function(error) {
                 const registrationError = document.getElementById('registrationError');
