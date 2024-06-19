@@ -124,7 +124,7 @@
     
             const token = localStorage.getItem('authToken');
             
-            axios.post('http://localhost:8000/api/products', data, {
+            axios.post('https://jhunatienza.github.io/LaraProjecet/api/products', data, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -142,7 +142,7 @@
         document.getElementById('showProducts').addEventListener('click', function() {
         const token = localStorage.getItem('authToken');
 
-        axios.get('http://localhost:8000/api/products', {
+        axios.get('https://jhunatienza.github.io/LaraProjecet/api/products', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -167,7 +167,7 @@
     document.getElementById('logoutButton').addEventListener('click', function() {
         const token = localStorage.getItem('authToken');
 
-        axios.post('http://localhost:8000/api/logout', {}, {
+        axios.post('https://jhunatienza.github.io/LaraProjecet/api/logout', {}, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -184,7 +184,7 @@
         const query = document.getElementById('searchBox').value;
         const token = localStorage.getItem('authToken');
 
-        axios.get('http://localhost:8000/api/products/search/'+query, {
+        axios.get('https://jhunatienza.github.io/LaraProjecet/api/api/products/search/'+query, {
             headers: {
                 'Authorization': `Bearer ${token}`
             },
