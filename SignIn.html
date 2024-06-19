@@ -98,7 +98,7 @@
             })
             .catch(function(error) {
                 const registrationError = document.getElementById('registrationError');
-                registrationError.textContent = error.response.data.message || 'Registration failed';
+                registrationError.textContent = error.response;
             });
     });
     </script>
