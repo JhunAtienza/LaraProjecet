@@ -90,7 +90,7 @@
             password_confirmation: formData.get('password_confirmation')
         };
 
-        axios.put('https://jhunatienza.github.io/LaraProjecet/api/register', data)
+        axios.post('http://localhost:8000/api/register', data)
             .then(function(response) {
                 const token = response.data.access_token;
                 localStorage.setItem('authToken', token);
